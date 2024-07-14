@@ -1,3 +1,4 @@
+// Blocking, synchronous way
 const fs = require('fs');
 
 const textIn = fs.readFileSync('./test.txt', 'utf-8');
