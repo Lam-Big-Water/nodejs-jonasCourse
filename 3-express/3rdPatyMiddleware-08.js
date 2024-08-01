@@ -6,6 +6,8 @@ const morgan = require('morgan');
 const app = express();
 
 // middleware
+app.use(express.json());
+
 app.use(morgan('dev'));
 app.use((req, res, next) => {
     console.log('Hello from the middleware');
